@@ -6,6 +6,10 @@ book::book(QWidget *parent) :
     ui(new Ui::book)
 {
     ui->setupUi(this);
+    setStyleSheet("QDialog { background-color: lightblue; }"
+                          "QPushButton { background-color: #4CAF50; color: white; }"
+                          "QComboBox { background-color: white; }"
+                          "QLabel { font-size: 12px; color: #333333; }");
 }
 
 book::~book()

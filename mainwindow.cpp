@@ -6,6 +6,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setStyleSheet("QDialog { background-color: lightblue; }"
+                          "QPushButton { background-color: #4CAF50; color: white; }"
+                          "QComboBox { background-color: white; }"
+                          "QLabel { font-size: 12px; color: #333333; }");
 
     QPixmap pm(":/assets/img/infoImage.jpg");
     ui->lblInfoImage->setPixmap(pm);
